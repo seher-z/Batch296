@@ -29,25 +29,33 @@ public class Scanner01 {
 
          */
 
-        // ClassName    objectName     Assignment Operator   'new'     keyword Constructor (with parameters)   semicolon
-
-        // Scanner         input              =                new       Scanner(with parameters)                  ;
-
-           Scanner         input           =                   new       Scanner(System.in)                        ;
-           
-
+        //ClassName    objectName    Assignment Operator    'new' keyword       Constructor(with parameters)   semicolon
+        
+        //  Scanner       input           =                  new                     Scanner(with parameters)          ;
+        //  Scanner       input           =                  new                     Scanner(System.in)                ;
+        //  Scanner       scanner         =                  new                     Scanner(System.in)                ;
 
 
+        // Step 1: Create an object from Scanner class
+        Scanner  scan  =  new Scanner(System.in);
 
+        // Step 2: Give a message to the user about the data / input that you want to get
+        System.out.println("Enter your name please");
 
+        //  Step 3: Store the data provided by the user
+        String name = scan.next();
 
+        System.out.println("name = " + name);
 
+        // Task : Ask user to provide their age and address, store and print it on the console
+        System.out.println("Enter your age please!");
+        byte age = scan.nextByte();
+        System.out.println("age = " + age);
 
-
-
-
-
-
+        // address
+        System.out.println("Enter your address please!");
+        String address = scan.next();  // next() stores data BEFORE space
+        System.out.println("address = " + address);
 
 
 
@@ -57,3 +65,4 @@ public class Scanner01 {
 
     }
 }
+
