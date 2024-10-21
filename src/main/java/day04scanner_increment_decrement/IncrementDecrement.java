@@ -13,7 +13,7 @@ public class IncrementDecrement {
 
         // Another way of increasing the value
         s += 2;   // s = s + 2; is doing the exact same thing
-        System.out.println("Increased value after second increment: " + 2);
+        System.out.println("Increased value after second increment: " + s);
 
 
         // Decrement
